@@ -17,6 +17,7 @@ let eyeHexColors = replaceColorNamesToHexcolors(eyeColorDataLowerCase);
 
 // to do
 // * Check and put een # voor kleurcodes
+// * Spatie na de # (removes " "??)
 // * Vreemde eendjes in de data..? What to do?
 
 console.log(eyeHexColors);
@@ -82,6 +83,7 @@ function replaceColorNamesToHexcolors(arr) {
 
     // RESOURCE: https://stackoverflow.com/questions/953311/replace-string-in-javascript-array
     // RESOURCE: https://stackoverflow.com/questions/7990879/how-to-combine-str-replace-expressions-in-javascript
+    // RESOURCE: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
     // RESOURCE: Color data https://htmlcolorcodes.com/color-names/
 
 
