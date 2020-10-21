@@ -1,13 +1,25 @@
 const dataSurvey = data; // loading all survey data and storing it in a variable.
 // console.log(dataSurvey);
 
-
+// Column Aantal glazen water per dag
 let columnName = "aantalGlazenWaterPerDag";
 let allAnswersInColumn = getData(dataSurvey, columnName);
 let cleanDataOfEmptySlots = removeEmptySlots(allAnswersInColumn)
 let cleanData = stringToNumbers(cleanDataOfEmptySlots);
 // console.log(allAnswersInColumn);
 console.log(cleanData);
+
+// Column kleur ogen
+let secondColumnName = "oogKleur";
+let allEyeColorData = getData(dataSurvey, secondColumnName);
+let eyeColorDataLowerCase = toLowerCase(allEyeColorData);
+let eyeHexColors = replaceColorNamesToHexcolors(eyeColorDataLowerCase);
+
+// to do
+// * Check and put een # voor kleurcodes
+// * Vreemde eendjes in de data..? What to do?
+
+console.log(eyeHexColors);
 
 
 // returns all data for a specific column
@@ -33,4 +45,45 @@ function removeEmptySlots(arr) {
         return cleanData != "";
     })
     return cleanData;
+}
+
+// All data to lowercase
+function toLowerCase(arr) {
+    let newCleanData = arr.map(x => x.toLowerCase());
+    return newCleanData;
+}
+
+
+function replaceColorNamesToHexcolors(arr) {
+    var cleanData = arr.map(
+        x => {
+            return x
+                .replace(/blauw/, '#0000FF')
+                .replace(/blue/, '#0000FF')
+                .replace(/groen/, '#008000')
+                .replace(/green/, '#008000')
+                .replace(/bruin/, '#A52A2A')
+                .replace(/brown/, '#A52A2A')
+                .replace(/rood/, '#FF0000')
+                .replace(/red/, '#FF0000')
+                .replace(/roze/, '#FFC0CB')
+                .replace(/pink/, '#FFC0CB')
+                .replace(/oranje/, '#FFA500')
+                .replace(/orange/, '#FFA500')
+                .replace(/geel/, '#FFFF00')
+                .replace(/yellow/, '#FFFF00')
+                .replace(/paars/, '#800080')
+                .replace(/purple/, '#800080')
+                .replace(/grijs/, '#808080')
+                .replace(/gray/, '#808080')
+                .replace(/wit/, '#FFFFFF')
+                .replace(/white/, '#FFFFFF');
+        });
+
+    // RESOURCE: https://stackoverflow.com/questions/953311/replace-string-in-javascript-array
+    // RESOURCE: https://stackoverflow.com/questions/7990879/how-to-combine-str-replace-expressions-in-javascript
+    // RESOURCE: Color data https://htmlcolorcodes.com/color-names/
+
+
+    return cleanData; // Array with colornames converted to hex colors.
 }
