@@ -14,13 +14,15 @@ let secondColumnName = "oogKleur";
 let allEyeColorData = getData(dataSurvey, secondColumnName);
 let eyeColorDataLowerCase = toLowerCase(allEyeColorData);
 let eyeHexColors = replaceColorNamesToHexcolors(eyeColorDataLowerCase);
+let eyeHexColorSpaces = removeSpaces(eyeHexColors);
 
 // to do
 // * Check and put een # voor kleurcodes
-// * Spatie na de # (removes " "??)
+// * Spatie na de # (removes " "??) DONE
+// * RGB naar hex?
 // * Vreemde eendjes in de data..? What to do?
 
-console.log(eyeHexColors);
+console.log(eyeHexColorSpaces);
 
 
 // returns all data for a specific column
@@ -79,6 +81,7 @@ function replaceColorNamesToHexcolors(arr) {
                 .replace(/gray/, '#808080')
                 .replace(/wit/, '#FFFFFF')
                 .replace(/white/, '#FFFFFF');
+
         });
 
     // RESOURCE: https://stackoverflow.com/questions/953311/replace-string-in-javascript-array
@@ -89,3 +92,35 @@ function replaceColorNamesToHexcolors(arr) {
 
     return cleanData; // Array with colornames converted to hex colors.
 }
+
+function removeSpaces(arr) {
+    var cleanData = arr.map(
+        x => {
+            return x.replace(/ /, '')
+        });
+    return cleanData; // Array without spaces in strings.
+}
+
+// checks if there is a # infront of the code
+// function hexCheck(arr) {
+//     if
+
+//     var cleanData = arr.map(
+//         x => {
+//             return x
+//                 .replace(/#/, '#')
+
+//         });
+
+//     return cleanData; // Array with colornames converted to hex colors.
+
+//     // if (arr.indexOf('#') == -1){
+//     //   var cleanData = arr.map(
+//     //     x => {
+//     //         return x
+//     //             .replace(/blauw/, '#0000FF')
+//     //     }
+//     // }
+
+
+// }
