@@ -63,7 +63,7 @@ function removeEmptySlots(arr) {
     // return cleanData;
 
     // .filter() shortest
-    let cleanData = arr.filter(keys => keys != "" || 0);
+    let cleanData = arr.filter(keys => keys != "");
     return cleanData;
 }
 
