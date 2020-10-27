@@ -6,8 +6,8 @@ let columnName = "aantalGlazenWaterPerDag";
 let allAnswersInColumn = getData(dataSurvey, columnName);
 let cleanDataOfEmptySlots = removeEmptySlots(allAnswersInColumn)
 let cleanData = stringToNumbers(cleanDataOfEmptySlots);
-// console.log(allAnswersInColumn);
-console.log(cleanData);
+
+console.log('all data in', columnName, allAnswersInColumn);
 
 // Column kleur ogen
 let secondColumnName = "oogKleur";
@@ -15,14 +15,15 @@ let allEyeColorData = getData(dataSurvey, secondColumnName);
 let eyeColorDataLowerCase = toLowerCase(allEyeColorData);
 let eyeHexColors = replaceColorNamesToHexcolors(eyeColorDataLowerCase);
 let eyeHexColorSpaces = removeSpaces(eyeHexColors);
+let dataHexCheck = hexCheck(eyeHexColorSpaces);
 
 // to do
-// * Check and put een # voor kleurcodes
+// * Check and put een # voor kleurcodes (DONE)
 // * Spatie na de # (removes " "??) DONE
 // * RGB naar hex?
 // * Vreemde eendjes in de data..? What to do?
 
-console.log(eyeHexColorSpaces);
+// console.log('data without spaces inbetween', eyeHexColorSpaces);
 
 
 // returns all data for a specific column
@@ -43,10 +44,26 @@ function stringToNumbers(arr) {
 
 // removes all empty slots
 function removeEmptySlots(arr) {
-    let cleanData = arr.filter(function (cleanData) {
-        // return cleanData != "" || 0;  // also would remove the data that is zero.
-        return cleanData != "";
-    })
+
+    // filter with a original for loop example
+    // let cleanData = [];
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] != "") {
+    //         cleanData.push(arr[i])
+    //     }
+    // }
+    // return cleanData;
+
+
+    // filter with the .filter() example
+    // let cleanData = arr.filter(function (cleanData) {
+    //     // return cleanData != "" || 0;  // also would remove the data that is zero.
+    //     return cleanData != "";
+    // })
+    // return cleanData;
+
+    // .filter() shortest
+    let cleanData = arr.filter(keys => keys != "" || 0);
     return cleanData;
 }
 
@@ -94,33 +111,32 @@ function replaceColorNamesToHexcolors(arr) {
 }
 
 function removeSpaces(arr) {
-    var cleanData = arr.map(
-        x => {
-            return x.replace(/ /, '')
-        });
+    // using an original for loop
+    // let cleanData = [];
+    // for (let i = 0; i < arr.length; i++) {
+    //     cleanData.push(arr[i].replace(/ /, ''));
+    // }
+
+    // using the .map method
+    // let cleanData = arr.map(
+    //     keys => {
+    //         return keys.replace(/ /, '')
+    //     });
+
+    // Shortest version .map()
+    let cleanData = arr.map(keys => keys.replace(/ /, ''));
     return cleanData; // Array without spaces in strings.
 }
 
-// checks if there is a # infront of the code
-// function hexCheck(arr) {
-//     if
 
-//     var cleanData = arr.map(
-//         x => {
-//             return x
-//                 .replace(/#/, '#')
+function hexCheck(arr) { // Check if arrayItems start with #
+    let cleanData = arr;
+    for (result in cleanData) {
+        if (arr[result].charAt(0) !== '#') { // If the first char is nog a # 
+            cleanData[result] = '#' + cleanData[result] // add the # infront of the string
+        }
+    }
+    return cleanData // return array with added #
+}
 
-//         });
-
-//     return cleanData; // Array with colornames converted to hex colors.
-
-//     // if (arr.indexOf('#') == -1){
-//     //   var cleanData = arr.map(
-//     //     x => {
-//     //         return x
-//     //             .replace(/blauw/, '#0000FF')
-//     //     }
-//     // }
-
-
-// }
+// .charAt idea dode help by Marco Fijan
