@@ -7,7 +7,7 @@ let allAnswersInColumn = getData(dataSurvey, columnName);
 let cleanDataOfEmptySlots = removeEmptySlots(allAnswersInColumn)
 let cleanData = stringToNumbers(cleanDataOfEmptySlots);
 
-console.log('all data in', columnName, allAnswersInColumn);
+// console.log('string to number', cleanData);
 
 // Column kleur ogen
 let secondColumnName = "oogKleur";
@@ -17,13 +17,13 @@ let eyeHexColors = replaceColorNamesToHexcolors(eyeColorDataLowerCase);
 let eyeHexColorSpaces = removeSpaces(eyeHexColors);
 let dataHexCheck = hexCheck(eyeHexColorSpaces);
 
+console.log('clean eye color data:', dataHexCheck);
+
 // to do
 // * Check and put een # voor kleurcodes (DONE)
 // * Spatie na de # (removes " "??) DONE
 // * RGB naar hex?
 // * Vreemde eendjes in de data..? What to do?
-
-// console.log('data without spaces inbetween', eyeHexColorSpaces);
 
 
 // returns all data for a specific column
