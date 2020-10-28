@@ -2,7 +2,7 @@
 functional-programming 20/21  
 Student name: Nathan Neelis  
 
-## Concept
+### Concept
 Making a geographical map for parking places near train stations and inform the reader about electric charge spots and the amount of disabled spots.
 
 ### Research questions
