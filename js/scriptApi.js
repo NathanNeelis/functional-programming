@@ -1,4 +1,5 @@
 const endpoint = 'https://opendata.rdw.nl/resource/t5pc-eb34.json'; // welke dataset?
+const endpointNS = 'https://gateway.apiportal.ns.nl/places-api/v2/places'
 const selectedColumn = 'areaid'; // column of choice
 
 getData(endpoint)
@@ -8,6 +9,27 @@ getData(endpoint)
         const areaIdArray = filterData(rdwData, selectedColumn);
         console.log(areaIdArray);
     })
+
+getNsData(endpointNS)
+    .then(nsData => {
+        console.log('all NS data', nsData[0].locations);
+    })
+
+async function getNsData(url) {
+    const response = await fetch(url, {
+        method: 'GET',
+        headers: {
+            'Ocp-Apim-Subscription-Key': 'df890e3c5bc84d9a88399e3d551d1f6a'
+        }
+    })
+    const data = await response.json();
+    return data.payload;
+}
+
+// Github repo from Bas Araar that had used the NS API before, got this info from Deanne in Teams.
+//Resources: https://github.com/aaraar/web-app-from-scratch-1920/blob/188a235e690a3e0963b1eac0907f89bcbd2827a8/src/Api.ts#L61-L81
+// MDN about fetch, got the resource from Robert.
+//Resources: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 
 async function getData(url) {
     const response = await fetch(url);
