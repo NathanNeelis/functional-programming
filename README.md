@@ -19,7 +19,7 @@ I also assume that the electric charge spots are about the same overall the park
 [RDW dataset: GEO Parkeerkarages](https://opendata.rdw.nl/Parkeren/GEO-Parkeer-Garages/t5pc-eb34)  
 _Variables: Geolocations and areaid codes_  
 [RDW dataset: Geometrie gebied](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-GEOMETRIE-GEBIED/nsk3-v9n7)  
-_Variables: areaid, GeoDataAsText_
+_Variables: areaid, GeoDataAsText_  
 [RDW dataset: Specificaties parkeergebieden](https://opendata.rdw.nl/Parkeren/Open-Data-Parkeren-SPECIFICATIES-PARKEERGEBIED/b3us-f26s)  
 _Variables:  Areaid's, total parking spots, electric charge parking spots, disabled parking spots._  
 [NS dataset: train station location](https://apiportal.ns.nl/)  
