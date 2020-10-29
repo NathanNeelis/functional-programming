@@ -1,10 +1,11 @@
 const endpoint = 'https://opendata.rdw.nl/resource/t5pc-eb34.json'; // welke dataset?
 const endpointNS = 'https://gateway.apiportal.ns.nl/places-api/v2/places'
+// const endpointCBS = 'https://opendata.cbs.nl/ODataApi/odata/70072ned/TypedDataSet'
 const selectedColumn = 'areaid'; // column of choice
 
 getData(endpoint)
     .then(rdwData => {
-        console.log('all data:', rdwData);
+        console.log('all RDW data:', rdwData);
         console.log('first element:', rdwData[0]);
         const areaIdArray = filterData(rdwData, selectedColumn);
         console.log(areaIdArray);
@@ -15,6 +16,11 @@ getNsData(endpointNS)
         console.log('all NS station data', nsData[0].locations);
         console.log('all NS data', nsData);
     })
+
+// getData(endpointCBS)
+//     .then(cbsData => {
+//         console.log('all CBS data:', cbsData);
+//     })
 
 async function getNsData(url) {
     const response = await fetch(url, {
