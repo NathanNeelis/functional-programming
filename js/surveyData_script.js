@@ -139,4 +139,4 @@ function hexCheck(arr) { // Check if arrayItems start with #
     return cleanData // return array with added #
 }
 
-// .charAt idea dode help by Marco Fijan
+// .charAt idea code help by Marco Fijan

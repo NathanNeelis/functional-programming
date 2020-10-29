@@ -12,7 +12,8 @@ getData(endpoint)
 
 getNsData(endpointNS)
     .then(nsData => {
-        console.log('all NS data', nsData[0].locations);
+        console.log('all NS station data', nsData[0].locations);
+        console.log('all NS data', nsData);
     })
 
 async function getNsData(url) {
