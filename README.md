@@ -3,7 +3,9 @@ functional-programming 20/21
 Student name: Nathan Neelis  
 
 ### Concept
-Making a geographical map for parking places near train stations and inform the reader about electric charge spots and the amount of disabled spots.
+I want to create a bar chart for the 9 Randstad cities. That shows the difference in paid and free P+R parking area's. And maybe, if the data is there a difference in rates. I would also like to pick out some cities outside the randstad and show the difference in paid and free P+R.
+  
+After that I would like so like to visualize a geographical map of all P+R parking places. I want to show a difference in paid and free. And I also want to highlight the best P+R spot to visit Amsterdam and maybe other cities.   
 
 ### Research questions
 **Main research question: Are at some cities the P+R parking area's more often paid services than in other cities?**  
