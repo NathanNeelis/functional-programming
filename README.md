@@ -35,7 +35,8 @@ _Variables: Location (long/lat) for train stations and P+R parking areas, rate p
 
 ### Getting started
 _For a part of this project I used a dataset from a survey which is sensitive and cannot be shared online._
-By downloading this project you will miss the key ingredient for the survey_Data_script.js  
+_By downloading this project you will miss the key ingredient for the survey_Data_script.js_  
+  
 But this is only the start of this project, please feel free to skip that part for now and take a look at the way more interesting javascript files where I start cleaning data from API's and transform it for D3 visualisation.  
 
 #### Cloning the repo
