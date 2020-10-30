@@ -40,9 +40,9 @@ But this is only the start of this project, please feel free to skip that part f
 
 #### Cloning the repo
 Create your git repo  
-    $ cd "/foldername"  
-    $ mkdir foldername    
-    $ git init  
+    `$ cd "/foldername"`  
+    `$ mkdir foldername`   
+    `$ git init`  
 
 Clone this repo  
     $ git clone https://github.com/NathanNeelis/functional-programming.git  
