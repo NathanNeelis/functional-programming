@@ -52,4 +52,19 @@ But this is only the start of this project, please feel free to skip that part f
 1. Go to the url below and it will download the zip automatically  
     ```http://github.com/NathanNeelis/functional-programming/archive/master.zip``` 
 
+### Resources
+**Survey Data**  
+From all students following the datavisualisation track.  
+
+**Data sets**
+[RDW open data](https://opendata.rdw.nl)  
+[NS API](https://apiportal.ns.nl/)  
+
+**Code resources**
+[String to numbers](https://stackoverflow.com/questions/15677869/how-to-convert-a-string-of-numbers-to-an-array-of-numbers)    
+[Using replace method 1](https://stackoverflow.com/questions/953311/replace-string-in-javascript-array)  
+[Using replace method 2](https://stackoverflow.com/questions/7990879/how-to-combine-str-replace-expressions-in-javascript)  
+[Using replace method 3](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)  
+[Using hex color codes](https://htmlcolorcodes.com/color-names/)  
+[Using charAt](https://github.com/marcoFijan/functional-programming/blob/12ac7c24a5239bbb07b15b4d18ad67857d87895d/EnqueteData/index.js#L64-L69)  
 
