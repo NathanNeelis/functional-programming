@@ -54,17 +54,19 @@ But this is only the start of this project, please feel free to skip that part f
 
 ### Resources
 **Survey Data**  
-From all students following the datavisualisation track.  
+From all students following the datavisualisation track.   
 
-**Data sets**
+**Data sets**   
 [RDW open data](https://opendata.rdw.nl)  
 [NS API](https://apiportal.ns.nl/)  
 
-**Code resources**
+**Code resources**  
 [String to numbers](https://stackoverflow.com/questions/15677869/how-to-convert-a-string-of-numbers-to-an-array-of-numbers)    
 [Using replace method 1](https://stackoverflow.com/questions/953311/replace-string-in-javascript-array)  
 [Using replace method 2](https://stackoverflow.com/questions/7990879/how-to-combine-str-replace-expressions-in-javascript)  
 [Using replace method 3](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)  
 [Using hex color codes](https://htmlcolorcodes.com/color-names/)  
 [Using charAt](https://github.com/marcoFijan/functional-programming/blob/12ac7c24a5239bbb07b15b4d18ad67857d87895d/EnqueteData/index.js#L64-L69)  
-
+[Using fetch headers](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)  
+[Learning NS API 1](https://github.com/aaraar/web-app-from-scratch-1920/blob/188a235e690a3e0963b1eac0907f89bcbd2827a8/src/Api.ts#L61-L81)  
+[Learning NS API 2](https://apiportal.ns.nl/startersguide?_ga=2.32115260.384544656.1604054320-687691016.1603727685)  
