@@ -52,6 +52,9 @@ But this is only the start of this project, please feel free to skip that part f
 1. Go to the url below and it will download the zip automatically  
     ```http://github.com/NathanNeelis/functional-programming/archive/master.zip``` 
 
+### License
+[MIT License](https://github.com/NathanNeelis/functional-programming/blob/master/LICENSE)   
+
 ### Resources
 **Survey Data**  
 From all students following the datavisualisation track.   
@@ -70,7 +73,7 @@ From all students following the datavisualisation track.
 [Using fetch headers](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) developer mozilla  
 [Learning NS API](https://github.com/aaraar/web-app-from-scratch-1920/blob/188a235e690a3e0963b1eac0907f89bcbd2827a8/src/Api.ts#L61-L81) Bas Aaraar 19/20   
 
-**API resources**
+**API resources**  
 [Learning NS API](https://apiportal.ns.nl/startersguide?_ga=2.32115260.384544656.1604054320-687691016.1603727685) NS startersguide  
 [TomTom API doc](https://developer.tomtom.com/on-street-parking) TomTom  
 [RDW API doc](https://www.rdw.nl/over-rdw/dienstverlening/open-data/handleidingen) RDW  
