@@ -41,8 +41,8 @@ But this is only the start of this project, please feel free to skip that part f
 
 #### Cloning the repo
 1. Create your git repo  
-    ```cd "/foldername"```    
     ```mkdir foldername```   
+    ```cd "/foldername"```    
     ```git init```  
 
 2. Clone this repo  
