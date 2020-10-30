@@ -34,14 +34,18 @@ _Variables:  Areaid's, total parking spots, electric charge parking spots, disab
 _Variables: Location (long/lat) for train stations and P+R parking areas, rate paid P+R_  
 
 ### Getting started
+_For a part of this project I used a dataset from a survey which is sensitive and cannot be shared online._
+By downloading this project you will miss the key ingredient for the survey_Data_script.js  
+But this is only the start of this project, please feel free to skip that part for now and take a look at the way more interesting javascript files where I start cleaning data from API's and transform it for D3 visualisation.  
+
 #### Cloning the repo
 1. Create your git repo  
-    cd "/foldername"
-    mkdir foldername
-    git init
+    $ cd "/foldername"  
+    $ mkdir foldername    
+    $ git init  
 
 2. Clone this repo
-    git clone https://github.com/NathanNeelis/functional-programming.git
+    $ git clone https://github.com/NathanNeelis/functional-programming.git
 
 #### Download as zip
 1. Go to the url below and it will download the zip automatically
