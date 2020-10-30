@@ -49,7 +49,7 @@ But this is only the start of this project, please feel free to skip that part f
     ```git clone https://github.com/NathanNeelis/functional-programming.git```   
 
 #### Download as zip
-1. Go to the url below and it will download the zip automatically
+1. Go to the url below and it will download the zip automatically  
     ```http://github.com/NathanNeelis/functional-programming/archive/master.zip``` 
 
 
