@@ -39,16 +39,16 @@ By downloading this project you will miss the key ingredient for the survey_Data
 But this is only the start of this project, please feel free to skip that part for now and take a look at the way more interesting javascript files where I start cleaning data from API's and transform it for D3 visualisation.  
 
 #### Cloning the repo
-Create your git repo  
-    $ cd "/foldername"   
-```$ mkdir foldername```   
-```$ git init```  
+1. Create your git repo  
+    ```kcd "/foldername"```    
+    ```kdir foldername```   
+    ```git init```  
 
-Clone this repo  
-    $ git clone https://github.com/NathanNeelis/functional-programming.git  
+2. Clone this repo  
+    ```git clone https://github.com/NathanNeelis/functional-programming.git```   
 
 #### Download as zip
 1. Go to the url below and it will download the zip automatically
-    http://github.com/NathanNeelis/functional-programming/archive/master.zip
+    ```http://github.com/NathanNeelis/functional-programming/archive/master.zip``` 
 
 
