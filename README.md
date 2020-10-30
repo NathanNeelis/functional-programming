@@ -8,12 +8,11 @@ I want to create a bar chart for the 9 Randstad cities. That shows the differenc
 After that I would like so like to visualize a geographical map of all P+R parking places. I want to show a difference in paid and free. And I also want to highlight the best P+R spot to visit Amsterdam and maybe other cities.   
 
 ### Research questions
-**Main research question: Are at some cities the P+R parking area's more often paid services than in other cities?**  
-**Sub question 1:** Are there more free P+R parking services outside of the Randstad?  
-**Sub question 2:** Are there more paid P+R parking services inside the Randstad than free P+R services?  
-**Sub question 3:** Are there more P+R parking area's near cities in the Randstad then there are P+R parking area's near cities outside the Randstad?  
-**(Optional) Sub question 4:** Which P+R is the best parking spot for visiting Amsterdam?
-**(Optional) Sub question 5:** Are P+R parking area's often more paid services in city's where the income of citizens is higher?
+**Main research question: At which train stations are you able to park your car?**  
+**Sub question 1:** Can you also recharge your parked car?   
+**Sub question 2:** Are you able to park your car if you are disabled? 
+**Sub question 3:** Where can you grab a OV-fiets after you parked your car? 
+**(Optional) Sub question 4:** Which P+R is the best parking spot for visiting Amsterdam Central station?
   
 Please read my [wiki](https://github.com/NathanNeelis/functional-programming/wiki/concept) for more information about my assumptions and datasets.
 
