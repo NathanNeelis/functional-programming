@@ -33,3 +33,18 @@ _Variables:  Areaid's, total parking spots, electric charge parking spots, disab
 [NS dataset: P+R paid parking areas](https://apiportal.ns.nl/)  
 _Variables: Location (long/lat) for train stations and P+R parking areas, rate paid P+R_  
 
+### Getting started
+#### Cloning the repo
+1. Create your git repo  
+    cd "/foldername"
+    mkdir foldername
+    git init
+
+2. Clone this repo
+    git clone https://github.com/NathanNeelis/functional-programming.git
+
+#### Download as zip
+1. Go to the url below and it will download the zip automatically
+    http://github.com/NathanNeelis/functional-programming/archive/master.zip
+
+
