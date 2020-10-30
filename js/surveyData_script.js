@@ -75,7 +75,7 @@ function toLowerCase(arr) {
 
 
 function replaceColorNamesToHexcolors(arr) {
-    var cleanData = arr.map(
+    let cleanData = arr.map(
         x => {
             return x
                 .replace(/blauw/, '#0000FF')
