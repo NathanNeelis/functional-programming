@@ -6,11 +6,11 @@ Student name: Nathan Neelis
 For the Volkskrant we are taking a look at the RDW datasets to find interesting insights for a potential article about the car in the city. The subject is "the car in the city" and the datasets contains all kind of information about parking. But we're free to explore other data as well that has to do with the car in the city.  
 
 ### Research questions
-**Main research question: At which train stations are you able to park your car?**  
+**Main research question: At which train stations are you able to park your car?**   
 **Sub question 1:** Can you also recharge your parked car?   
-**Sub question 2:** Are you able to park your car if you are disabled? 
-**Sub question 3:** Where can you grab a OV-fiets after you parked your car? 
-**(Optional) Sub question 4:** Which P+R is the best parking spot for visiting Amsterdam Central station?
+**Sub question 2:** Are you able to park your car if you are disabled?  
+**Sub question 3:** Where can you grab a OV-fiets after you parked your car?   
+**(Optional) Sub question 4:** Which P+R is the best parking spot for visiting Amsterdam Central station?  
   
 Please read my [wiki](https://github.com/NathanNeelis/functional-programming/wiki/concept) for more information about my assumptions and datasets.
 
