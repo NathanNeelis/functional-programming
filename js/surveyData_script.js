@@ -1,31 +1,44 @@
 const dataSurvey = data; // loading all survey data and storing it in a variable.
 // console.log(dataSurvey);
 
-// Column Aantal glazen water per dag
-let columnName = "aantalGlazenWaterPerDag";
-let allAnswersInColumn = getData(dataSurvey, columnName);
-let cleanDataOfEmptySlots = removeEmptySlots(allAnswersInColumn)
-let cleanData = stringToNumbers(cleanDataOfEmptySlots);
 
-// console.log('string to number', cleanData);
+// clean data arrays
+let cleanEyeData = cleaningEyeColorData();
+console.log('clean eye color data:', cleanEyeData);
+
+let cleanGlazenWaterData = cleaningGlazenWaterData();
+console.log('clean glazen water data', cleanGlazenWaterData);
+
+
+// FUNCTIONS CLEANING DATA ARRAYS
+// Column Aantal glazen water per dag
+function cleaningGlazenWaterData() {
+    let columnName = "aantalGlazenWaterPerDag";
+    let allAnswersInColumn = getData(dataSurvey, columnName);
+    let cleanDataOfEmptySlots = removeEmptySlots(allAnswersInColumn)
+    let cleanData = stringToNumbers(cleanDataOfEmptySlots);
+    return cleanData;
+}
 
 // Column kleur ogen
-let secondColumnName = "oogKleur";
-let allEyeColorData = getData(dataSurvey, secondColumnName);
-let eyeColorDataLowerCase = toLowerCase(allEyeColorData);
-let eyeHexColors = replaceColorNamesToHexcolors(eyeColorDataLowerCase);
-let eyeHexColorSpaces = removeSpaces(eyeHexColors);
-let dataHexCheck = hexCheck(eyeHexColorSpaces);
-
-console.log('clean eye color data:', dataHexCheck);
-
 // to do
-// * Check and put een # voor kleurcodes (DONE)
-// * Spatie na de # (removes " "??) DONE
-// * RGB naar hex?
-// * Vreemde eendjes in de data..? What to do?
+// all data to lowercase
+// convert all color names to hex color codes
+// * Check and put een # voor color codes (DONE)
+// * Space after the # (removes " "??) DONE
+// remove rest incorrect data 
+function cleaningEyeColorData() {
+    let secondColumnName = "oogKleur";
+    let allEyeColorData = getData(dataSurvey, secondColumnName);
+    let eyeColorDataLowerCase = toLowerCase(allEyeColorData);
+    let eyeHexColors = replaceColorNamesToHexcolors(eyeColorDataLowerCase);
+    let eyeHexColorSpaces = removeSpaces(eyeHexColors);
+    let dataHexCheck = hexCheck(eyeHexColorSpaces);
+    let removeLongStrings = checkTotalCharacters(dataHexCheck, 8);
+    return removeLongStrings
+}
 
-
+// FUNCTION TO GET THE DATA
 // returns all data for a specific column
 function getData(answers, question) {
     let answerData = [];
@@ -35,6 +48,7 @@ function getData(answers, question) {
     return answerData; // Array with all the data in the specific column
 };
 
+// SEPERATE FUNCTIONS TO CLEAN DATA ARRAYS
 // converts all string numbers to numbers (integers)
 function stringToNumbers(arr) {
     let newCleanData = arr.map(x => +x);
@@ -140,3 +154,10 @@ function hexCheck(arr) { // Check if arrayItems start with #
 }
 
 // .charAt idea code help by Marco Fijan
+
+function checkTotalCharacters(arr, amount) {
+    let newData = arr.filter(function (newData) {
+        return newData.length < amount;
+    })
+    return newData;
+}
